@@ -16,7 +16,15 @@ Quotes.init(
         quote_phrase:{
             type: DataTypes.STRING,
             allowNull: false,
-        }
+        }, 
+
+        quote_by:{
+            type: DataTypes.STRING,
+            allowNull: false,
+        }, 
+
+
+
     }, 
     {
         sequelize,
