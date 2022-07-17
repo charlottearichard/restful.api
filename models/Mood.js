@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
-class Quotes extends Model {}
+class Mood extends Model {}
 
-Quotes.init(
+Mood.init(
     {
         //create columns 
         id: {
@@ -13,7 +13,7 @@ Quotes.init(
             autoIncrement: true
         },
 
-        quote_phrase:{
+        mood_name:{
             type: DataTypes.STRING,
             allowNull: false,
         }
@@ -23,8 +23,8 @@ Quotes.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'quotes',
+        modelName: 'mood',
       }
 ); 
 
-module.exports = Quotes;
+module.exports = Mood;
