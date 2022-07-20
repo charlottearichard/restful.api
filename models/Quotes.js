@@ -13,17 +13,15 @@ Quotes.init(
             autoIncrement: true
         },
 
-        quote_phrase:{
+        quote:{
             type: DataTypes.STRING,
             allowNull: false,
-        }, 
+        },
 
-        quote_by:{
+        by: {
             type: DataTypes.STRING,
             allowNull: false,
-        }, 
-
-
+        }
 
     }, 
     {

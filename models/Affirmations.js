@@ -16,6 +16,11 @@ Affirmations.init(
         affirmation_phrase:{
             type: DataTypes.STRING,
             allowNull: false,
+        },
+
+        mood: {
+            type: DataTypes.STRING,
+            allowNull: false,
         }
     }, 
     {
